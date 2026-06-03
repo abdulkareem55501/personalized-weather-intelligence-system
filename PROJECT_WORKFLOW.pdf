@@ -1,0 +1,4616 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 3654 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+() Tj
+/F2 18 Tf
+1 0 0 1 54.00 779.00 Tm
+(Personalized Weather Intelligence - Project Workflow) Tj
+/F2 18 Tf
+1 0 0 1 54.00 755.00 Tm
+(Document) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 731.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 724.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 719.00 Tm
+(1. Project Overview) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 699.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 692.00 Tm
+(Personalized Weather Intelligence is a FastAPI-based weather intelligence application) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 677.00 Tm
+(with a browser-based React frontend. The system combines real-time OpenWeatherMap data,) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 662.00 Tm
+(trained machine learning models, and user health profiles to generate personalized) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 647.00 Tm
+(weather insights.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 632.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 625.00 Tm
+(The application provides four main outputs:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 610.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 603.00 Tm
+(1. Personalized feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 588.00 Tm
+(2. Health risk level) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 573.00 Tm
+(3. Activity suitability percentage and safety precautions) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 558.00 Tm
+(4. Forecast-based safer activity time windows) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 543.00 Tm
+(5. Model evaluation dashboard for explaining training results) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 528.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 521.00 Tm
+(The frontend is served directly by FastAPI, so the project does not require Node, npm,) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 506.00 Tm
+(or Vite to run.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 491.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 484.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 479.00 Tm
+(2. Main Technologies) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 459.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 452.00 Tm
+(- **Backend:** FastAPI) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 437.00 Tm
+(- **Frontend:** React loaded through browser CDN inside `frontend/simple/index.html`) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 422.00 Tm
+(- **Weather data:** OpenWeatherMap API) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 407.00 Tm
+(- **Machine learning:** scikit-learn, XGBoost, LightGBM, CatBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 392.00 Tm
+(- **Model persistence:** joblib) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 377.00 Tm
+(- **Data processing:** pandas, numpy) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 362.00 Tm
+(- **External API:** OpenWeatherMap current weather, air pollution, UV and forecast) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 347.00 Tm
+(endpoints) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 332.00 Tm
+(- **Runtime interface:** Browser application available at `/ui`) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 317.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 310.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 305.00 Tm
+(3. Current Project Structure) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 285.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 278.00 Tm
+(api.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 265.00 Tm
+(config.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 252.00 Tm
+(requirements.txt) Tj
+/F3 9 Tf
+1 0 0 1 68.00 239.00 Tm
+(README.md) Tj
+/F3 9 Tf
+1 0 0 1 68.00 226.00 Tm
+(PROJECT_WORKFLOW.md) Tj
+/F3 9 Tf
+1 0 0 1 68.00 213.00 Tm
+(frontend/) Tj
+/F3 9 Tf
+1 0 0 1 68.00 200.00 Tm
+(simple/) Tj
+/F3 9 Tf
+1 0 0 1 68.00 187.00 Tm
+(index.html) Tj
+/F3 9 Tf
+1 0 0 1 54.00 174.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 161.00 Tm
+(modules/) Tj
+/F3 9 Tf
+1 0 0 1 68.00 148.00 Tm
+(__init__.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 135.00 Tm
+(predictions.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 122.00 Tm
+(weather_api.py) Tj
+/F3 9 Tf
+1 0 0 1 54.00 109.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 96.00 Tm
+(models/) Tj
+/F3 9 Tf
+1 0 0 1 68.00 83.00 Tm
+(train_models.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 70.00 Tm
+(feels_like.pkl) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [4 0 R 52 0 R] >>
+endobj
+6 0 obj
+<< /Length 3631 >>
+stream
+BT
+/F3 9 Tf
+1 0 0 1 68.00 784.00 Tm
+(health_risk.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 771.00 Tm
+(activity.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 758.00 Tm
+(scaler.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 745.00 Tm
+(feature_cols.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 732.00 Tm
+(metrics.json) Tj
+/F3 9 Tf
+1 0 0 1 54.00 719.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 706.00 Tm
+(data/) Tj
+/F3 9 Tf
+1 0 0 1 68.00 693.00 Tm
+(db_measurements_v2.1.0.csv) Tj
+/F3 9 Tf
+1 0 0 1 68.00 680.00 Tm
+(db_measurements_v2.1.0.csv.gz) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 667.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 659.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 652.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 647.00 Tm
+(4. How To Run The Application) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 627.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 620.00 Tm
+(From the project root:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 605.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 598.00 Tm
+(cd "G:\\Final Year Project\\weather_app") Tj
+/F3 9 Tf
+1 0 0 1 68.00 585.00 Tm
+(uvicorn api:app --reload --port 8000) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 572.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 564.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 557.00 Tm
+(Then open:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 542.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 535.00 Tm
+(http://localhost:8000/ui) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 522.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 514.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 507.00 Tm
+(The API documentation is available at:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 492.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 485.00 Tm
+(http://localhost:8000/docs) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 472.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 464.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 457.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 452.00 Tm
+(5. Environment Configuration) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 432.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 425.00 Tm
+(The application expects an OpenWeatherMap API key in a .env file:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 410.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 403.00 Tm
+(OPENWEATHER_API_KEY=your_api_key_here) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 390.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 382.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 375.00 Tm
+(config.py loads this key:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 360.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 353.00 Tm
+(API_KEY = os.getenv\("OPENWEATHER_API_KEY"\)) Tj
+/F3 9 Tf
+1 0 0 1 68.00 340.00 Tm
+(BASE_URL = "http://api.openweathermap.org/data/2.5") Tj
+/F3 9 Tf
+1 0 0 1 68.00 327.00 Tm
+(AIR_URL = "http://api.openweathermap.org/data/2.5/air_pollution") Tj
+/F3 9 Tf
+1 0 0 1 68.00 314.00 Tm
+(UV_URL = "http://api.openweathermap.org/data/2.5/uvi") Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 301.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 293.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 286.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 281.00 Tm
+(6. Dataset Used) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 261.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 254.00 Tm
+(The project uses the ASHRAE Global Thermal Comfort Database II:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 239.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 232.00 Tm
+(data/db_measurements_v2.1.0.csv) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 219.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 211.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 204.00 Tm
+(The dataset contains thermal comfort measurements such as:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 189.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 182.00 Tm
+(- Air temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 167.00 Tm
+(- Relative humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 152.00 Tm
+(- Air velocity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 137.00 Tm
+(- Metabolic rate) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 122.00 Tm
+(- Clothing insulation) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 107.00 Tm
+(- Age) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 92.00 Tm
+(- Gender) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 77.00 Tm
+(- Thermal sensation) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [6 0 R 53 0 R] >>
+endobj
+8 0 obj
+<< /Length 3309 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- PMV) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Operative temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 754.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 747.00 Tm
+(The training script selects these columns:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 732.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 725.00 Tm
+(cols = [) Tj
+/F3 9 Tf
+1 0 0 1 68.00 712.00 Tm
+("ta",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 699.00 Tm
+("rh",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 686.00 Tm
+("vel",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 673.00 Tm
+("met",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 660.00 Tm
+("clo",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 647.00 Tm
+("age",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 634.00 Tm
+("gender",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 621.00 Tm
+("top",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 608.00 Tm
+("thermal_sensation",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 595.00 Tm
+("pmv") Tj
+/F3 9 Tf
+1 0 0 1 68.00 582.00 Tm
+(]) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 569.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 561.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 554.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 549.00 Tm
+(7. Training Pipeline) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 529.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 522.00 Tm
+(Training is handled by:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 507.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 500.00 Tm
+(models/train_models.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 487.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 479.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 472.00 Tm
+(To retrain models:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 457.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 450.00 Tm
+(python models/train_models.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 437.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 429.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 422.00 Tm
+(The script:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 407.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 400.00 Tm
+(1. Loads the ASHRAE dataset) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 385.00 Tm
+(2. Cleans missing rows) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 370.00 Tm
+(3. Derives runtime-compatible features) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 355.00 Tm
+(4. Creates target labels) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 340.00 Tm
+(5. Trains multiple algorithms) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 325.00 Tm
+(6. Compares model performance) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 310.00 Tm
+(7. Saves the best models into `models/`) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 295.00 Tm
+(8. Writes evaluation results into `models/metrics.json`) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 280.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 273.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 268.00 Tm
+(8. Runtime Feature Engineering) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 248.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 241.00 Tm
+(Runtime feature engineering happens in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 226.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 219.00 Tm
+(modules/predictions.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 206.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 198.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 191.00 Tm
+(The runtime feature vector is:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 176.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 169.00 Tm
+(feature_temp) Tj
+/F3 9 Tf
+1 0 0 1 68.00 156.00 Tm
+(feature_humidity) Tj
+/F3 9 Tf
+1 0 0 1 68.00 143.00 Tm
+(feature_wind) Tj
+/F3 9 Tf
+1 0 0 1 68.00 130.00 Tm
+(feature_aqi) Tj
+/F3 9 Tf
+1 0 0 1 68.00 117.00 Tm
+(feature_age) Tj
+/F3 9 Tf
+1 0 0 1 68.00 104.00 Tm
+(feature_health_score) Tj
+/F3 9 Tf
+1 0 0 1 68.00 91.00 Tm
+(feature_heat_sens) Tj
+/F3 9 Tf
+1 0 0 1 68.00 78.00 Tm
+(feature_cold_sens) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 65.00 Tm
+() Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [8 0 R 54 0 R] >>
+endobj
+10 0 obj
+<< /Length 3372 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 777.00 Tm
+(These features are built from:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 762.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 755.00 Tm
+(- Current weather) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 740.00 Tm
+(- AQI) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 725.00 Tm
+(- User age) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 710.00 Tm
+(- Health conditions) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 695.00 Tm
+(- Heat sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 680.00 Tm
+(- Cold sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 665.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 658.00 Tm
+(The feature order is stored in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 643.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 636.00 Tm
+(FEATURE_COLS = [) Tj
+/F3 9 Tf
+1 0 0 1 68.00 623.00 Tm
+("feature_temp",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 610.00 Tm
+("feature_humidity",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 597.00 Tm
+("feature_wind",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 584.00 Tm
+("feature_aqi",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 571.00 Tm
+("feature_age",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 558.00 Tm
+("feature_health_score",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 545.00 Tm
+("feature_heat_sens",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 532.00 Tm
+("feature_cold_sens",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 519.00 Tm
+(]) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 506.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 498.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 491.00 Tm
+(At runtime, the application creates a pandas DataFrame with the same feature names used) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 476.00 Tm
+(during training. This prevents scikit-learn feature-name warnings.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 461.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 454.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 449.00 Tm
+(9. Machine Learning Models) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 429.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 422.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 419.00 Tm
+(9.1 Feels-Like Temperature Model) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 402.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 395.00 Tm
+(Function:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 380.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 373.00 Tm
+(predict_feels_like\(\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 360.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 352.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 345.00 Tm
+(Model file:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 330.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 323.00 Tm
+(models/feels_like.pkl) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 310.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 302.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 295.00 Tm
+(Purpose:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 280.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 273.00 Tm
+(Predicts a personalized perceived temperature.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 258.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 251.00 Tm
+(Input features:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 236.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 229.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 214.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 199.00 Tm
+(- Wind speed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 184.00 Tm
+(- AQI) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 169.00 Tm
+(- Age) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 154.00 Tm
+(- Health score) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 139.00 Tm
+(- Heat sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 124.00 Tm
+(- Cold sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 109.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 102.00 Tm
+(The model prediction is then adjusted using a rule-based personalization offset. This) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 87.00 Tm
+(offset considers:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 72.00 Tm
+() Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [10 0 R 55 0 R] >>
+endobj
+12 0 obj
+<< /Length 3197 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- Elderly users) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Heat sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Cold sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- Heart condition) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 724.00 Tm
+(- Asthma) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 709.00 Tm
+(- Respiratory illness) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 694.00 Tm
+(- Diabetes) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 679.00 Tm
+(- Arthritis) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 664.00 Tm
+(- High humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 649.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 642.00 Tm
+(Output:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 627.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 620.00 Tm
+(personalized feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 607.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 599.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 592.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 589.00 Tm
+(9.2 Health Risk Model) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 572.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 565.00 Tm
+(Function:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 550.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 543.00 Tm
+(predict_health_risk\(\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 530.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 522.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 515.00 Tm
+(Model files:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 500.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 493.00 Tm
+(models/health_risk.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 480.00 Tm
+(models/scaler.pkl) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 467.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 459.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 452.00 Tm
+(Purpose:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 437.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 430.00 Tm
+(Predicts the user's health risk level.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 415.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 408.00 Tm
+(Possible outputs:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 393.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 386.00 Tm
+(Low) Tj
+/F3 9 Tf
+1 0 0 1 68.00 373.00 Tm
+(Medium) Tj
+/F3 9 Tf
+1 0 0 1 68.00 360.00 Tm
+(High) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 347.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 339.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 332.00 Tm
+(The system uses a two-layer approach:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 317.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 310.00 Tm
+(1. ML model prediction) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 295.00 Tm
+(2. Rule-based health threshold validation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 280.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 273.00 Tm
+(The rule-based validation checks:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 258.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 251.00 Tm
+(- Heat thresholds) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 236.00 Tm
+(- Cold thresholds) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 221.00 Tm
+(- AQI thresholds) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 206.00 Tm
+(- Humidity thresholds) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 191.00 Tm
+(- UV thresholds) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 176.00 Tm
+(- Age-related vulnerability) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 161.00 Tm
+(- Heart condition) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 146.00 Tm
+(- Asthma) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 131.00 Tm
+(- Respiratory illness) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 116.00 Tm
+(- Diabetes) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 101.00 Tm
+(- Arthritis) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 86.00 Tm
+(- Heat and cold sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 71.00 Tm
+() Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [12 0 R 56 0 R] >>
+endobj
+14 0 obj
+<< /Length 3412 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+(The final risk level is the safer/higher value between ML prediction and rule-based) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 769.00 Tm
+(risk.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 754.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 747.00 Tm
+(Returned values:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 732.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 725.00 Tm
+(risk_level) Tj
+/F3 9 Tf
+1 0 0 1 68.00 712.00 Tm
+(risk_explanation) Tj
+/F3 9 Tf
+1 0 0 1 68.00 699.00 Tm
+(confidence) Tj
+/F3 9 Tf
+1 0 0 1 68.00 686.00 Tm
+(risk_factors) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 673.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 665.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 658.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 655.00 Tm
+(9.3 Activity Suitability Model) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 638.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 631.00 Tm
+(Function:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 616.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 609.00 Tm
+(predict_activities\(\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 596.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 588.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 581.00 Tm
+(Model file:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 566.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 559.00 Tm
+(models/activity.pkl) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 546.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 538.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 531.00 Tm
+(Purpose:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 516.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 509.00 Tm
+(Predicts whether selected activities are suitable for the user.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 494.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 487.00 Tm
+(Supported activities:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 472.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 465.00 Tm
+(- Walking) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 450.00 Tm
+(- Running) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 435.00 Tm
+(- Cycling) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 420.00 Tm
+(- Swimming) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 405.00 Tm
+(- Gardening) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 390.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 383.00 Tm
+(The system returns:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 368.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 361.00 Tm
+(activity status) Tj
+/F3 9 Tf
+1 0 0 1 68.00 348.00 Tm
+(suitability percentage) Tj
+/F3 9 Tf
+1 0 0 1 68.00 335.00 Tm
+(recommendation text) Tj
+/F3 9 Tf
+1 0 0 1 68.00 322.00 Tm
+(limiting factors) Tj
+/F3 9 Tf
+1 0 0 1 68.00 309.00 Tm
+(positive factors) Tj
+/F3 9 Tf
+1 0 0 1 68.00 296.00 Tm
+(safety precautions) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 283.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 275.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 268.00 Tm
+(Activity status can be:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 253.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 246.00 Tm
+(Ideal) Tj
+/F3 9 Tf
+1 0 0 1 68.00 233.00 Tm
+(Suitable) Tj
+/F3 9 Tf
+1 0 0 1 68.00 220.00 Tm
+(Not Recommended) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 207.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 199.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 192.00 Tm
+(The percentage is generated from the internal activity score.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 177.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 170.00 Tm
+(Example output:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 155.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 148.00 Tm
+({) Tj
+/F3 9 Tf
+1 0 0 1 68.00 135.00 Tm
+("Running": {) Tj
+/F3 9 Tf
+1 0 0 1 68.00 122.00 Tm
+("status": "Suitable",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 109.00 Tm
+("percentage": 61,) Tj
+/F3 9 Tf
+1 0 0 1 68.00 96.00 Tm
+("recommendation": "61% suitable for running right now.",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 83.00 Tm
+("limiting_factors": [],) Tj
+/F3 9 Tf
+1 0 0 1 68.00 70.00 Tm
+("positive_factors": [],) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [14 0 R 57 0 R] >>
+endobj
+16 0 obj
+<< /Length 3509 >>
+stream
+BT
+/F3 9 Tf
+1 0 0 1 68.00 784.00 Tm
+("safety_precautions": "To do running more safely...") Tj
+/F3 9 Tf
+1 0 0 1 68.00 771.00 Tm
+(}) Tj
+/F3 9 Tf
+1 0 0 1 68.00 758.00 Tm
+(}) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 745.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 737.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 730.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 725.00 Tm
+(10. Forecast Recommendation System) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 705.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 698.00 Tm
+(Forecast data is fetched in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 683.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 676.00 Tm
+(modules/weather_api.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 663.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 655.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 648.00 Tm
+(Function:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 633.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 626.00 Tm
+(get_forecast\(city\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 613.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 605.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 598.00 Tm
+(It uses OpenWeatherMap's 5-day / 3-hour forecast endpoint:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 583.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 576.00 Tm
+(/forecast) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 563.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 555.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 548.00 Tm
+(The application processes the next forecast windows and recommends better times for each) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 533.00 Tm
+(selected activity.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 518.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 511.00 Tm
+(Forecast recommendation logic is in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 496.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 489.00 Tm
+(recommend_activity_times\(\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 476.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 468.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 461.00 Tm
+(The function checks:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 446.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 439.00 Tm
+(- Forecast temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 424.00 Tm
+(- Forecast humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 409.00 Tm
+(- Forecast wind speed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 394.00 Tm
+(- Rain probability) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 379.00 Tm
+(- Activity type) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 364.00 Tm
+(- User health conditions) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 349.00 Tm
+(- User age) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 334.00 Tm
+(- Sensitivity profile) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 319.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 312.00 Tm
+(For each activity, the system returns the top forecast windows.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 297.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 290.00 Tm
+(Each recommendation includes:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 275.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 268.00 Tm
+(datetime) Tj
+/F3 9 Tf
+1 0 0 1 68.00 255.00 Tm
+(temperature) Tj
+/F3 9 Tf
+1 0 0 1 68.00 242.00 Tm
+(humidity) Tj
+/F3 9 Tf
+1 0 0 1 68.00 229.00 Tm
+(wind speed) Tj
+/F3 9 Tf
+1 0 0 1 68.00 216.00 Tm
+(weather condition) Tj
+/F3 9 Tf
+1 0 0 1 68.00 203.00 Tm
+(rain probability) Tj
+/F3 9 Tf
+1 0 0 1 68.00 190.00 Tm
+(suitability percentage) Tj
+/F3 9 Tf
+1 0 0 1 68.00 177.00 Tm
+(activity note) Tj
+/F3 9 Tf
+1 0 0 1 68.00 164.00 Tm
+(health and safety note) Tj
+/F3 9 Tf
+1 0 0 1 68.00 151.00 Tm
+(reason) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 138.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 130.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 123.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 118.00 Tm
+(11. Weather API Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 98.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 91.00 Tm
+(Weather functions are located in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 76.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 69.00 Tm
+(modules/weather_api.py) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [16 0 R 58 0 R] >>
+endobj
+18 0 obj
+<< /Length 3241 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 776.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 769.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 766.00 Tm
+(Current Weather) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 749.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 742.00 Tm
+(Function:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 727.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 720.00 Tm
+(get_weather\(city\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 707.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 699.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 692.00 Tm
+(It fetches:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 677.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 670.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 655.00 Tm
+(- API feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 640.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 625.00 Tm
+(- Wind speed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 610.00 Tm
+(- Weather condition) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 595.00 Tm
+(- Description) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 580.00 Tm
+(- Visibility) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 565.00 Tm
+(- Pressure) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 550.00 Tm
+(- Latitude) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 535.00 Tm
+(- Longitude) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 520.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 513.00 Tm
+(It also fetches:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 498.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 491.00 Tm
+(- AQI from OpenWeatherMap air pollution API) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 476.00 Tm
+(- UV index where available) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 461.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 454.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 451.00 Tm
+(Forecast Weather) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 434.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 427.00 Tm
+(Function:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 412.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 405.00 Tm
+(get_forecast\(city\)) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 392.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 384.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 377.00 Tm
+(It fetches:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 362.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 355.00 Tm
+(- 3-hour forecast windows) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 340.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 325.00 Tm
+(- Feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 310.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 295.00 Tm
+(- Wind speed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 280.00 Tm
+(- Weather condition) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 265.00 Tm
+(- Rain probability) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 250.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 243.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 238.00 Tm
+(12. FastAPI Backend Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 218.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 211.00 Tm
+(Main backend file:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 196.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 189.00 Tm
+(api.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 176.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 168.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 161.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 158.00 Tm
+(Main API Endpoint) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 141.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 134.00 Tm
+(POST /api/predict) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 121.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 113.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 106.00 Tm
+(Request body:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 91.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 84.00 Tm
+({) Tj
+/F3 9 Tf
+1 0 0 1 68.00 71.00 Tm
+("city": "London",) Tj
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [18 0 R 59 0 R] >>
+endobj
+20 0 obj
+<< /Length 3379 >>
+stream
+BT
+/F3 9 Tf
+1 0 0 1 68.00 784.00 Tm
+("profile": {) Tj
+/F3 9 Tf
+1 0 0 1 68.00 771.00 Tm
+("name": "User",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 758.00 Tm
+("age": 25,) Tj
+/F3 9 Tf
+1 0 0 1 68.00 745.00 Tm
+("gender": "Prefer not to say",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 732.00 Tm
+("health_conditions": ["None"],) Tj
+/F3 9 Tf
+1 0 0 1 68.00 719.00 Tm
+("activity_preferences": ["Walking"],) Tj
+/F3 9 Tf
+1 0 0 1 68.00 706.00 Tm
+("heat_sensitivity": "Medium",) Tj
+/F3 9 Tf
+1 0 0 1 68.00 693.00 Tm
+("cold_sensitivity": "Medium") Tj
+/F3 9 Tf
+1 0 0 1 68.00 680.00 Tm
+(}) Tj
+/F3 9 Tf
+1 0 0 1 68.00 667.00 Tm
+(}) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 654.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 646.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 639.00 Tm
+(Backend process:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 624.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 617.00 Tm
+(1. Fetch current weather) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 602.00 Tm
+(2. Build profile features) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 587.00 Tm
+(3. Predict personalized feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 572.00 Tm
+(4. Predict health risk) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 557.00 Tm
+(5. Predict activity suitability) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 542.00 Tm
+(6. Fetch forecast) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 527.00 Tm
+(7. Recommend safer activity windows) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 512.00 Tm
+(8. Return full prediction response) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 497.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 490.00 Tm
+(Response includes:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 475.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 468.00 Tm
+(weather) Tj
+/F3 9 Tf
+1 0 0 1 68.00 455.00 Tm
+(feels_like) Tj
+/F3 9 Tf
+1 0 0 1 68.00 442.00 Tm
+(risk_level) Tj
+/F3 9 Tf
+1 0 0 1 68.00 429.00 Tm
+(risk_explanation) Tj
+/F3 9 Tf
+1 0 0 1 68.00 416.00 Tm
+(confidence) Tj
+/F3 9 Tf
+1 0 0 1 68.00 403.00 Tm
+(risk_factors) Tj
+/F3 9 Tf
+1 0 0 1 68.00 390.00 Tm
+(activities) Tj
+/F3 9 Tf
+1 0 0 1 68.00 377.00 Tm
+(forecast) Tj
+/F3 9 Tf
+1 0 0 1 68.00 364.00 Tm
+(forecast_error) Tj
+/F3 9 Tf
+1 0 0 1 68.00 351.00 Tm
+(activity_times) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 338.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 330.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 323.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 320.00 Tm
+(Other Endpoints) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 303.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 296.00 Tm
+(GET /ui) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 283.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 275.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 268.00 Tm
+(Serves the React frontend.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 253.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 246.00 Tm
+(GET /api/weather/{city}) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 233.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 225.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 218.00 Tm
+(Returns current weather only.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 203.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 196.00 Tm
+(GET /api/metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 183.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 175.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 168.00 Tm
+(Returns model evaluation metrics from models/metrics.json.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 153.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 146.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 141.00 Tm
+(13. Frontend Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 121.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 114.00 Tm
+(Frontend file:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 99.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 92.00 Tm
+(frontend/simple/index.html) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 79.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 71.00 Tm
+() Tj
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [20 0 R 60 0 R] >>
+endobj
+22 0 obj
+<< /Length 3495 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+(The frontend uses React through CDN. It is served by FastAPI through:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 769.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 762.00 Tm
+(GET /ui) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 749.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 741.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 734.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 731.00 Tm
+(Frontend Pages / Steps) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 714.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 707.00 Tm
+(The frontend is a step-based single-page application.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 692.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 685.00 Tm
+(Steps:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 670.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 663.00 Tm
+(intro) Tj
+/F3 9 Tf
+1 0 0 1 68.00 650.00 Tm
+(form) Tj
+/F3 9 Tf
+1 0 0 1 68.00 637.00 Tm
+(predictionLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 624.00 Tm
+(prediction) Tj
+/F3 9 Tf
+1 0 0 1 68.00 611.00 Tm
+(riskLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 598.00 Tm
+(risk) Tj
+/F3 9 Tf
+1 0 0 1 68.00 585.00 Tm
+(forecastLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 572.00 Tm
+(forecast) Tj
+/F3 9 Tf
+1 0 0 1 68.00 559.00 Tm
+(modelLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 546.00 Tm
+(modelEvaluation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 533.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 525.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 518.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 515.00 Tm
+(Step 1: Landing Page) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 498.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 491.00 Tm
+(Displays:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 476.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 469.00 Tm
+(- Application name) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 454.00 Tm
+(- Project description) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 439.00 Tm
+(- Key model outputs) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 424.00 Tm
+(- Main factors used by the system) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 409.00 Tm
+(- Start button) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 394.00 Tm
+(- Secondary model evaluation button) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 379.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 372.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 369.00 Tm
+(Optional Step: Model Evaluation Dashboard) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 352.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 345.00 Tm
+(After clicking:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 330.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 323.00 Tm
+(View ML Evaluation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 310.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 302.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 295.00 Tm
+(The frontend calls:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 280.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 273.00 Tm
+(GET /api/metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 260.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 252.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 245.00 Tm
+(It displays:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 230.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 223.00 Tm
+(- Deployed model names and headline metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 208.00 Tm
+(- Feels-like model comparison graph) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 193.00 Tm
+(- Activity suitability model comparison graph) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 178.00 Tm
+(- Health-risk model comparison graph) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 163.00 Tm
+(- Feature-importance graph) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 148.00 Tm
+(- Health-risk precision and recall table) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 133.00 Tm
+(- Validation notes for viva/demo explanation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 118.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 111.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 108.00 Tm
+(Step 2: Input Form) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 91.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 84.00 Tm
+(Collects:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 69.00 Tm
+() Tj
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [22 0 R 61 0 R] >>
+endobj
+24 0 obj
+<< /Length 3298 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- City) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Name) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Age) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- Heat sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 724.00 Tm
+(- Cold sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 709.00 Tm
+(- Health conditions) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 694.00 Tm
+(- Activity preferences) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 679.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 672.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 669.00 Tm
+(Step 3: Prediction Loader) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 652.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 645.00 Tm
+(Shows animated weather loader while backend prediction is running.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 630.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 623.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 620.00 Tm
+(Step 4: Prediction Summary) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 603.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 596.00 Tm
+(Displays:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 581.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 574.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 559.00 Tm
+(- AQI) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 544.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 529.00 Tm
+(- UV level) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 514.00 Tm
+(- Personalized feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 499.00 Tm
+(- Health risk card) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 484.00 Tm
+(- Activity suitability cards) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 469.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 462.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 459.00 Tm
+(Step 5: Risk Analysis) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 442.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 435.00 Tm
+(After clicking:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 420.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 413.00 Tm
+(Review Health Risk Factors) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 400.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 392.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 385.00 Tm
+(The frontend shows:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 370.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 363.00 Tm
+(- Risk level) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 348.00 Tm
+(- Confidence) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 333.00 Tm
+(- Summary) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 318.00 Tm
+(- Current weather triggers) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 303.00 Tm
+(- Risk factor cards) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 288.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 281.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 278.00 Tm
+(Step 6: Forecast Activity Timing) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 261.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 254.00 Tm
+(After clicking:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 239.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 232.00 Tm
+(Find Safest Activity Windows) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 219.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 211.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 204.00 Tm
+(The frontend shows:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 189.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 182.00 Tm
+(- Best forecast time windows) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 167.00 Tm
+(- Activity percentage) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 152.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 137.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 122.00 Tm
+(- Wind speed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 107.00 Tm
+(- Rain probability) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 92.00 Tm
+(- Activity check) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 77.00 Tm
+(- Health and safety guidance) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 62.00 Tm
+() Tj
+ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [24 0 R 62 0 R] >>
+endobj
+26 0 obj
+<< /Length 4062 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 779.00 Tm
+(14. Full End-To-End Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 759.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 752.00 Tm
+(1. User opens:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 737.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 730.00 Tm
+(http://localhost:8000/ui) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 717.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 709.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 702.00 Tm
+(2. User clicks:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 687.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 680.00 Tm
+(Start Health Weather Check) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 667.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 659.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 652.00 Tm
+(3. User enters city and health profile.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 637.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 630.00 Tm
+(4. Frontend sends request to:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 615.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 608.00 Tm
+(POST /api/predict) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 595.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 587.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 580.00 Tm
+(5. Backend fetches current weather from OpenWeatherMap.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 565.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 558.00 Tm
+(6. Backend fetches AQI and UV data.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 543.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 536.00 Tm
+(7. Backend builds runtime ML features.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 521.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 514.00 Tm
+(8. Backend loads trained ML models from `models/`.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 499.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 492.00 Tm
+(9. Backend predicts personalized feels-like temperature.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 477.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 470.00 Tm
+(10. Backend predicts health risk level.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 455.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 448.00 Tm
+(11. Backend predicts activity suitability.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 433.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 426.00 Tm
+(12. Backend fetches 3-hour forecast windows.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 411.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 404.00 Tm
+(13. Backend recommends safer activity times.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 389.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 382.00 Tm
+(14. Frontend displays prediction summary.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 367.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 360.00 Tm
+(15. User can open health risk analysis.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 345.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 338.00 Tm
+(16. User can open forecast activity timing recommendations.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 323.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 316.00 Tm
+(17. User can return to the landing page and open the ML evaluation dashboard.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 301.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 294.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 289.00 Tm
+(15. Detailed User Journey) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 269.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 262.00 Tm
+(This section explains every user-facing step in the current application.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 247.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 240.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 237.00 Tm
+(15.1 Landing Page) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 220.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 213.00 Tm
+(The landing page introduces the application as Personalized Weather Intelligence. It) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 198.00 Tm
+(explains that the system uses weather data, machine learning and health-aware decision) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 183.00 Tm
+(support.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 168.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 161.00 Tm
+(The landing page has two actions:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 146.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 139.00 Tm
+(1. **Start Health Weather Check**) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 124.00 Tm
+(- This is the main action for a normal user.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 109.00 Tm
+(- It opens the profile input form.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 94.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 87.00 Tm
+(2. **View ML Evaluation**) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 72.00 Tm
+(- This is a secondary action.) Tj
+ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [26 0 R 63 0 R] >>
+endobj
+28 0 obj
+<< /Length 3465 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+(- It opens the evaluation dashboard for academic demonstration, viva discussion and) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 769.00 Tm
+(model transparency.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 754.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 747.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 744.00 Tm
+(15.2 Profile Input Form) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 727.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 720.00 Tm
+(The input form collects the information required for personalisation.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 705.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 698.00 Tm
+(User inputs:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 683.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 676.00 Tm
+(- City) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 661.00 Tm
+(- Name) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 646.00 Tm
+(- Age) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 631.00 Tm
+(- Heat sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 616.00 Tm
+(- Cold sensitivity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 601.00 Tm
+(- Health conditions) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 586.00 Tm
+(- Activity preferences) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 571.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 564.00 Tm
+(Health conditions:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 549.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 542.00 Tm
+(- None) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 527.00 Tm
+(- Asthma) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 512.00 Tm
+(- Heart condition) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 497.00 Tm
+(- Diabetes) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 482.00 Tm
+(- Arthritis) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 467.00 Tm
+(- Respiratory illness) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 452.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 445.00 Tm
+(Activity preferences:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 430.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 423.00 Tm
+(- Walking) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 408.00 Tm
+(- Running) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 393.00 Tm
+(- Cycling) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 378.00 Tm
+(- Swimming) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 363.00 Tm
+(- Gardening) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 348.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 341.00 Tm
+(When the form is submitted, the frontend sends a POST /api/predict request to the) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 326.00 Tm
+(FastAPI backend.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 311.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 304.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 301.00 Tm
+(15.3 Prediction Loading Screen) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 284.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 277.00 Tm
+(The loading screen is shown while the backend:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 262.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 255.00 Tm
+(- Fetches live weather) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 240.00 Tm
+(- Fetches air quality information) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 225.00 Tm
+(- Fetches UV information) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 210.00 Tm
+(- Builds the runtime feature vector) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 195.00 Tm
+(- Loads machine learning models) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 180.00 Tm
+(- Generates personalised outputs) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 165.00 Tm
+(- Retrieves forecast windows) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 150.00 Tm
+(- Calculates activity timing recommendations) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 135.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 128.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 125.00 Tm
+(15.4 Prediction Summary Page) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 108.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 101.00 Tm
+(The prediction summary page shows the first set of results.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 86.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 79.00 Tm
+(Displayed cards:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 64.00 Tm
+() Tj
+ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [28 0 R 64 0 R] >>
+endobj
+30 0 obj
+<< /Length 3544 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- Current temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Air quality) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- UV level) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 724.00 Tm
+(- Personalised feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 709.00 Tm
+(- Health risk level) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 694.00 Tm
+(- Risk confidence) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 679.00 Tm
+(- Activity suitability cards) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 664.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 657.00 Tm
+(Activity cards include:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 642.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 635.00 Tm
+(- Activity name) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 620.00 Tm
+(- Suitability percentage) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 605.00 Tm
+(- Recommendation status) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 590.00 Tm
+(- Main explanation) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 575.00 Tm
+(- Safety precautions) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 560.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 553.00 Tm
+(The page then shows a button:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 538.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 531.00 Tm
+(Review Health Risk Factors) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 518.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 510.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 503.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 500.00 Tm
+(15.5 Health Risk Analysis Page) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 483.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 476.00 Tm
+(This page explains why the current weather may be safe, cautious or risky for the user.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 461.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 454.00 Tm
+(Displayed information:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 439.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 432.00 Tm
+(- Overall risk level) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 417.00 Tm
+(- Confidence value) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 402.00 Tm
+(- Personal risk explanation) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 387.00 Tm
+(- Current weather triggers) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 372.00 Tm
+(- Risk factor cards) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 357.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 350.00 Tm
+(Weather triggers include:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 335.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 328.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 313.00 Tm
+(- Humidity) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 298.00 Tm
+(- Air quality) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 283.00 Tm
+(- UV level) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 268.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 261.00 Tm
+(Risk factor cards explain which environmental or profile factors affected the result.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 246.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 239.00 Tm
+(The page then shows a button:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 224.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 217.00 Tm
+(Find Safest Activity Windows) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 204.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 196.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 189.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 186.00 Tm
+(15.6 Forecast Activity Timing Page) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 169.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 162.00 Tm
+(This page uses forecast data to recommend better times for selected activities.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 147.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 140.00 Tm
+(For each selected activity, the system shows:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 125.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 118.00 Tm
+(- Recommended forecast time) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 103.00 Tm
+(- Suitability percentage) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 88.00 Tm
+(- Temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 73.00 Tm
+(- Humidity) Tj
+ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [30 0 R 65 0 R] >>
+endobj
+32 0 obj
+<< /Length 3838 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- Wind speed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Rain probability) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Weather condition) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- Activity-specific note) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 724.00 Tm
+(- Health and safety note) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 709.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 702.00 Tm
+(The forecast recommendation uses the next available 3-hour forecast windows from) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 687.00 Tm
+(OpenWeatherMap.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 672.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 665.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 662.00 Tm
+(15.7 Model Evaluation Dashboard) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 645.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 638.00 Tm
+(The model evaluation dashboard is designed for academic transparency and viva) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 623.00 Tm
+(explanation.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 608.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 601.00 Tm
+(It displays:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 586.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 579.00 Tm
+(- Number of model families compared) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 564.00 Tm
+(- Dataset and runtime data sources) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 549.00 Tm
+(- Selected model for each task) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 534.00 Tm
+(- Feels-like regression metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 519.00 Tm
+(- Activity suitability classification metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 504.00 Tm
+(- Health risk classification metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 489.00 Tm
+(- Model comparison bar graphs) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 474.00 Tm
+(- Feature importance graph) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 459.00 Tm
+(- Per-class health risk precision and recall table) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 444.00 Tm
+(- Explanation of why the Neural Network was selected for health risk) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 429.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 422.00 Tm
+(This page calls:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 407.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 400.00 Tm
+(GET /api/metrics) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 387.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 379.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 372.00 Tm
+(The metrics are loaded from:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 357.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 350.00 Tm
+(models/metrics.json) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 337.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 329.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 322.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 317.00 Tm
+(16. Backend Prediction Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 297.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 290.00 Tm
+(The main backend workflow is handled by:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 275.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 268.00 Tm
+(api.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 255.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 247.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 240.00 Tm
+(The main prediction endpoint is:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 225.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 218.00 Tm
+(POST /api/predict) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 205.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 197.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 190.00 Tm
+(Detailed backend sequence:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 175.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 168.00 Tm
+(1. FastAPI receives the city and user profile from the frontend.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 153.00 Tm
+(2. The backend validates the request body.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 138.00 Tm
+(3. `get_weather\(city\)` is called from `modules/weather_api.py`.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 123.00 Tm
+(4. OpenWeatherMap current weather data is requested.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 108.00 Tm
+(5. Latitude and longitude are extracted from the weather response.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 93.00 Tm
+(6. Air quality data is requested using the coordinates.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 78.00 Tm
+(7. UV data is requested using the coordinates.) Tj
+ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [32 0 R 66 0 R] >>
+endobj
+34 0 obj
+<< /Length 4169 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 62.00 784.00 Tm
+(8. Weather values are normalised into a single Python dictionary.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 769.00 Tm
+(9. The user profile is converted into runtime features.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 754.00 Tm
+(10. The trained feels-like model is loaded from `models/feels_like.pkl`.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 739.00 Tm
+(11. `predict_feels_like\(\)` predicts the personalised perceived temperature.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 724.00 Tm
+(12. A rule-based personalisation offset is applied to account for sensitivity and) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 709.00 Tm
+(health profile factors.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 694.00 Tm
+(13. The trained health risk model is loaded from `models/health_risk.pkl`.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 679.00 Tm
+(14. `predict_health_risk\(\)` predicts the user-specific risk level.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 664.00 Tm
+(15. Safety thresholds are applied so that health-relevant weather risks are not) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 649.00 Tm
+(hidden by the ML model.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 634.00 Tm
+(16. The trained activity model is loaded from `models/activity.pkl`.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 619.00 Tm
+(17. `predict_activities\(\)` calculates activity suitability percentages.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 604.00 Tm
+(18. The backend calls `get_forecast\(city\)` for future 3-hour forecast windows.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 589.00 Tm
+(19. `recommend_activity_times\(\)` ranks future time slots for the user's selected) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 574.00 Tm
+(activities.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 559.00 Tm
+(20. FastAPI returns a JSON response to the frontend.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 544.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 537.00 Tm
+(The response includes:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 522.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 515.00 Tm
+(- Current weather) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 500.00 Tm
+(- Personalised feels-like temperature) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 485.00 Tm
+(- Health risk level) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 470.00 Tm
+(- Risk explanation) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 455.00 Tm
+(- Confidence) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 440.00 Tm
+(- Risk factors) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 425.00 Tm
+(- Activity recommendations) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 410.00 Tm
+(- Forecast information) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 395.00 Tm
+(- Forecast error message if the forecast request fails) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 380.00 Tm
+(- Activity time recommendations) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 365.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 358.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 353.00 Tm
+(17. Weather API Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 333.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 326.00 Tm
+(Weather data is handled in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 311.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 304.00 Tm
+(modules/weather_api.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 291.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 283.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 276.00 Tm
+(The current weather workflow uses these OpenWeatherMap endpoints:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 261.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 254.00 Tm
+(- Current weather endpoint) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 239.00 Tm
+(- Air pollution endpoint) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 224.00 Tm
+(- UV endpoint) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 209.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 202.00 Tm
+(The forecast workflow uses:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 187.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 180.00 Tm
+(- 5 day / 3 hour forecast endpoint) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 165.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 158.00 Tm
+(The system does not store weather API responses in a database. The response is used) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 143.00 Tm
+(immediately for prediction and display.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 128.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 121.00 Tm
+(If weather data cannot be retrieved, the backend returns an error response that is shown) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 106.00 Tm
+(on the frontend.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 91.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 84.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 79.00 Tm
+(18. Machine Learning Training Workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 59.00 Tm
+() Tj
+ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [34 0 R 67 0 R] >>
+endobj
+36 0 obj
+<< /Length 3614 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 54.00 784.00 Tm
+(Model training is handled in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 769.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 762.00 Tm
+(models/train_models.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 749.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 741.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 734.00 Tm
+(Training sequence:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 719.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 712.00 Tm
+(1. Load the ASHRAE Global Thermal Comfort Database II.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 697.00 Tm
+(2. Select relevant thermal comfort columns.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 682.00 Tm
+(3. Clean rows with missing values.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 667.00 Tm
+(4. Build runtime-compatible features.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 652.00 Tm
+(5. Create targets for feels-like prediction, activity suitability and health risk.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 637.00 Tm
+(6. Split data into training and testing sets.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 622.00 Tm
+(7. Train multiple algorithms for each task.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 607.00 Tm
+(8. Compare models using appropriate metrics.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 592.00 Tm
+(9. Select deployment models.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 577.00 Tm
+(10. Save trained models into the `models/` directory.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 562.00 Tm
+(11. Save feature column order.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 547.00 Tm
+(12. Save scaler for the neural network path.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 532.00 Tm
+(13. Save evaluation metrics into `models/metrics.json`.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 517.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 510.00 Tm
+(Model artifacts:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 495.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 488.00 Tm
+(models/feels_like.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 475.00 Tm
+(models/activity.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 462.00 Tm
+(models/health_risk.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 449.00 Tm
+(models/scaler.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 436.00 Tm
+(models/feature_cols.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 423.00 Tm
+(models/metrics.json) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 410.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 402.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 395.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 390.00 Tm
+(19. Model Evaluation Results) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 370.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 363.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 360.00 Tm
+(19.1 Feels-Like Temperature Model) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 343.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 336.00 Tm
+(Task type:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 321.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 314.00 Tm
+(Regression) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 301.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 293.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 286.00 Tm
+(Selected model:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 271.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 264.00 Tm
+(Random Forest Regressor) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 251.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 243.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 236.00 Tm
+(Metrics:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 221.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 214.00 Tm
+(- MAE: 0.216) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 199.00 Tm
+(- RMSE: 0.367) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 184.00 Tm
+(- Cross-validation MAE mean: 0.314) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 169.00 Tm
+(- Cross-validation MAE standard deviation: 0.029) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 154.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 147.00 Tm
+(Compared algorithms:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 132.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 125.00 Tm
+(- Linear Regression) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 110.00 Tm
+(- Decision Tree) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 95.00 Tm
+(- Random Forest) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 80.00 Tm
+(- Gradient Boosting) Tj
+ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [36 0 R 68 0 R] >>
+endobj
+38 0 obj
+<< /Length 3779 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- XGBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- CatBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 754.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 747.00 Tm
+(Interpretation:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 732.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 725.00 Tm
+(The Random Forest model achieved the lowest error among the tested regression models.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 710.00 Tm
+(Feature importance shows that temperature dominates the prediction. This is expected for) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 695.00 Tm
+(perceived temperature modelling, but it also means that personal profile variables have) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 680.00 Tm
+(lower influence in the trained model. The system addresses this limitation by applying a) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 665.00 Tm
+(rule-based personalisation offset after the ML prediction.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 650.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 643.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 640.00 Tm
+(19.2 Activity Suitability Model) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 623.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 616.00 Tm
+(Task type:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 601.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 594.00 Tm
+(Classification and recommendation scoring) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 581.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 573.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 566.00 Tm
+(Selected model:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 551.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 544.00 Tm
+(Random Forest Classifier) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 531.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 523.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 516.00 Tm
+(Metrics:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 501.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 494.00 Tm
+(- F1: 0.968) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 479.00 Tm
+(- Accuracy: 0.965) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 464.00 Tm
+(- Precision: 0.962) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 449.00 Tm
+(- Recall: 0.965) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 434.00 Tm
+(- Cross-validation F1 mean: 0.950) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 419.00 Tm
+(- Cross-validation F1 standard deviation: 0.009) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 404.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 397.00 Tm
+(Compared algorithms:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 382.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 375.00 Tm
+(- Decision Tree) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 360.00 Tm
+(- Random Forest) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 345.00 Tm
+(- Gradient Boosting) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 330.00 Tm
+(- XGBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 315.00 Tm
+(- LightGBM) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 300.00 Tm
+(- CatBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 285.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 278.00 Tm
+(Interpretation:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 263.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 256.00 Tm
+(Weighted F1 is important because the system should balance correct suitable and) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 241.00 Tm
+(unsuitable recommendations. The activity model is supported by additional rule-based) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 226.00 Tm
+(checks for temperature, AQI, humidity, UV, wind and health conditions.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 211.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 204.00 Tm
+() Tj
+/F2 12.5 Tf
+1 0 0 1 54.00 201.00 Tm
+(19.3 Health Risk Model) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 184.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 177.00 Tm
+(Task type:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 162.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 155.00 Tm
+(Classification) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 142.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 134.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 127.00 Tm
+(Selected model:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 112.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 105.00 Tm
+(Neural Network, MLP) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 92.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 84.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 77.00 Tm
+(Metrics:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 62.00 Tm
+() Tj
+ET
+endstream
+endobj
+39 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [38 0 R 69 0 R] >>
+endobj
+40 0 obj
+<< /Length 3823 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- Accuracy: 0.992) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- F1: 0.992) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Precision: 0.992) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- Recall: 0.992) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 724.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 717.00 Tm
+(Compared algorithms:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 702.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 695.00 Tm
+(- Logistic Regression) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 680.00 Tm
+(- Decision Tree) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 665.00 Tm
+(- Random Forest) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 650.00 Tm
+(- Gradient Boosting) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 635.00 Tm
+(- XGBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 620.00 Tm
+(- LightGBM) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 605.00 Tm
+(- CatBoost) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 590.00 Tm
+(- Neural Network, MLP) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 575.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 568.00 Tm
+(Important explanation:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 553.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 546.00 Tm
+(Random Forest achieved a slightly higher raw health-risk score, around 0.995 accuracy.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 531.00 Tm
+(The Neural Network was selected because it remained within approximately 1 percent of) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 516.00 Tm
+(the best raw result and is conceptually suitable for modelling non-linear interactions) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 501.00 Tm
+(between environmental factors, age, sensitivity and health conditions.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 486.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 479.00 Tm
+(Per-class health risk results:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 464.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 457.00 Tm
+(Low risk:    precision 0.994, recall 1.000) Tj
+/F3 9 Tf
+1 0 0 1 68.00 444.00 Tm
+(Medium risk: precision 0.987, recall 0.979) Tj
+/F3 9 Tf
+1 0 0 1 68.00 431.00 Tm
+(High risk:   precision 0.958, recall 0.719) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 418.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 410.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 403.00 Tm
+(Critical limitation:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 388.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 381.00 Tm
+(The high-risk recall of 0.719 is lower than the low and medium risk classes. This) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 366.00 Tm
+(matters because a safety-related system should avoid missing high-risk cases. The) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 351.00 Tm
+(project partly addresses this by combining ML predictions with rule-based health and) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 336.00 Tm
+(weather thresholds. Future work should include more high-risk data, class balancing,) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 321.00 Tm
+(calibration, external validation and expert review.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 306.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 299.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 294.00 Tm
+(20. Runtime Feature Engineering) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 274.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 267.00 Tm
+(The runtime feature vector is built in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 252.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 245.00 Tm
+(modules/predictions.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 232.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 224.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 217.00 Tm
+(Features:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 202.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 195.00 Tm
+(feature_temp) Tj
+/F3 9 Tf
+1 0 0 1 68.00 182.00 Tm
+(feature_humidity) Tj
+/F3 9 Tf
+1 0 0 1 68.00 169.00 Tm
+(feature_wind) Tj
+/F3 9 Tf
+1 0 0 1 68.00 156.00 Tm
+(feature_aqi) Tj
+/F3 9 Tf
+1 0 0 1 68.00 143.00 Tm
+(feature_age) Tj
+/F3 9 Tf
+1 0 0 1 68.00 130.00 Tm
+(feature_health_score) Tj
+/F3 9 Tf
+1 0 0 1 68.00 117.00 Tm
+(feature_heat_sens) Tj
+/F3 9 Tf
+1 0 0 1 68.00 104.00 Tm
+(feature_cold_sens) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 91.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 83.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 76.00 Tm
+(Feature sources:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 61.00 Tm
+() Tj
+ET
+endstream
+endobj
+41 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [40 0 R 70 0 R] >>
+endobj
+42 0 obj
+<< /Length 3866 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- Temperature comes from OpenWeatherMap.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Humidity comes from OpenWeatherMap.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Wind speed comes from OpenWeatherMap.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- AQI comes from OpenWeatherMap air pollution data.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 724.00 Tm
+(- Age comes from the user profile.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 709.00 Tm
+(- Health score is derived from selected health conditions.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 694.00 Tm
+(- Heat sensitivity is encoded from user selection.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 679.00 Tm
+(- Cold sensitivity is encoded from user selection.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 664.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 657.00 Tm
+(The feature vector is created as a pandas DataFrame using the same feature names used) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 642.00 Tm
+(during model training. This prevents scikit-learn feature-name warnings.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 627.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 620.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 615.00 Tm
+(21. Hybrid Decision Logic) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 595.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 588.00 Tm
+(The project does not rely only on raw machine learning outputs. It uses a hybrid) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 573.00 Tm
+(approach:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 558.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 551.00 Tm
+(1. Machine learning model prediction) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 536.00 Tm
+(2. Rule-based personalisation) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 521.00 Tm
+(3. Safety threshold validation) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 506.00 Tm
+(4. Human-readable explanation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 491.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 484.00 Tm
+(This approach is used because weather-health advice has safety implications. A pure) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 469.00 Tm
+(model output could miss a risk if the training data is limited. The rule-based layer) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 454.00 Tm
+(helps ensure that known risk conditions, such as very poor air quality or high) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 439.00 Tm
+(sensitivity, are still considered.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 424.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 417.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 412.00 Tm
+(22. Frontend Implementation Details) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 392.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 385.00 Tm
+(Frontend file:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 370.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 363.00 Tm
+(frontend/simple/index.html) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 350.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 342.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 335.00 Tm
+(The frontend is a single page React application. It is served by FastAPI and does not) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 320.00 Tm
+(require a separate frontend server.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 305.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 298.00 Tm
+(Main React states:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 283.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 276.00 Tm
+(intro) Tj
+/F3 9 Tf
+1 0 0 1 68.00 263.00 Tm
+(form) Tj
+/F3 9 Tf
+1 0 0 1 68.00 250.00 Tm
+(predictionLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 237.00 Tm
+(prediction) Tj
+/F3 9 Tf
+1 0 0 1 68.00 224.00 Tm
+(riskLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 211.00 Tm
+(risk) Tj
+/F3 9 Tf
+1 0 0 1 68.00 198.00 Tm
+(forecastLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 185.00 Tm
+(forecast) Tj
+/F3 9 Tf
+1 0 0 1 68.00 172.00 Tm
+(modelLoading) Tj
+/F3 9 Tf
+1 0 0 1 68.00 159.00 Tm
+(modelEvaluation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 146.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 138.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 131.00 Tm
+(Important frontend features:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 116.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 109.00 Tm
+(- Professional landing page) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 94.00 Tm
+(- Editable name and age fields) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 79.00 Tm
+(- Multi-select health conditions) Tj
+ET
+endstream
+endobj
+43 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [42 0 R 71 0 R] >>
+endobj
+44 0 obj
+<< /Length 3881 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(- Multi-select activity preferences) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 769.00 Tm
+(- Animated loaders) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 754.00 Tm
+(- Prediction metric cards) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 739.00 Tm
+(- Risk factor cards) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 724.00 Tm
+(- Forecast activity cards) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 709.00 Tm
+(- Model evaluation dashboard) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 694.00 Tm
+(- Back navigation between major pages) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 679.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 672.00 Tm
+(The current frontend intentionally does not include search history because the project) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 657.00 Tm
+(no longer uses a database.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 642.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 635.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 630.00 Tm
+(23. Removed Or Unused Functionality) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 610.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 603.00 Tm
+(The project previously included or considered database-backed profile/history) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 588.00 Tm
+(functionality. This was removed from the current version.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 573.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 566.00 Tm
+(Reasons for removal:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 551.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 544.00 Tm
+(- Search history was not central to the final project aim.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 529.00 Tm
+(- The current dissertation focus is weather intelligence, ML prediction and health-) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 514.00 Tm
+(aware activity recommendation.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 499.00 Tm
+(- Removing the database simplifies installation and demonstration.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 484.00 Tm
+(- The current app avoids storing personal health profile data persistently.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 469.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 462.00 Tm
+(Removed or no longer used:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 447.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 440.00 Tm
+(- Database storage) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 425.00 Tm
+(- Search history page) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 410.00 Tm
+(- Profile persistence endpoints) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 395.00 Tm
+(- Node/Vite frontend workflow) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 380.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 373.00 Tm
+(Current project does not require:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 358.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 351.00 Tm
+(- npm) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 336.00 Tm
+(- Node.js) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 321.00 Tm
+(- A database server) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 306.00 Tm
+(- A local frontend dev server) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 291.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 284.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 279.00 Tm
+(24. Testing And Validation Checklist) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 259.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 252.00 Tm
+(Suggested checks for demonstration:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 237.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 230.00 Tm
+(1. Start FastAPI using `uvicorn api:app --reload --port 8000`.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 215.00 Tm
+(2. Open `http://localhost:8000/ui`.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 200.00 Tm
+(3. Confirm landing page loads.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 185.00 Tm
+(4. Click **Start Health Weather Check**.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 170.00 Tm
+(5. Enter a city and profile.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 155.00 Tm
+(6. Submit the form.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 140.00 Tm
+(7. Confirm prediction summary appears.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 125.00 Tm
+(8. Confirm temperature, AQI, humidity and UV cards show values.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 110.00 Tm
+(9. Confirm personalised feels-like temperature appears.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 95.00 Tm
+(10. Confirm health risk card appears.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 80.00 Tm
+(11. Confirm activity suitability cards show percentages and safety advice.) Tj
+ET
+endstream
+endobj
+45 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [44 0 R 72 0 R] >>
+endobj
+46 0 obj
+<< /Length 4204 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 62.00 784.00 Tm
+(12. Click **Review Health Risk Factors**.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 769.00 Tm
+(13. Confirm risk analysis page appears.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 754.00 Tm
+(14. Confirm risk factor cards and weather triggers are displayed.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 739.00 Tm
+(15. Click **Find Safest Activity Windows**.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 724.00 Tm
+(16. Confirm forecast timing cards appear.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 709.00 Tm
+(17. Return to landing page.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 694.00 Tm
+(18. Click **View ML Evaluation**.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 679.00 Tm
+(19. Confirm model evaluation graphs and tables appear.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 664.00 Tm
+(20. Open `http://localhost:8000/docs` and confirm API documentation is available.) Tj
+/F1 10.5 Tf
+1 0 0 1 62.00 649.00 Tm
+(21. Open `http://localhost:8000/api/metrics` and confirm model metrics are returned.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 634.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 627.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 622.00 Tm
+(25. Where AI / ML Is Used) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 602.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 595.00 Tm
+(AI/ML is used in:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 580.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 573.00 Tm
+(modules/predictions.py) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 560.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 552.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 545.00 Tm
+(The model files are:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 530.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 523.00 Tm
+(models/feels_like.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 510.00 Tm
+(models/health_risk.pkl) Tj
+/F3 9 Tf
+1 0 0 1 68.00 497.00 Tm
+(models/activity.pkl) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 484.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 476.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 469.00 Tm
+(ML outputs:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 454.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 447.00 Tm
+(personalized feels-like temperature) Tj
+/F3 9 Tf
+1 0 0 1 68.00 434.00 Tm
+(health risk level) Tj
+/F3 9 Tf
+1 0 0 1 68.00 421.00 Tm
+(activity suitability) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 408.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 400.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 393.00 Tm
+(Rule-based logic is also used for safety validation and explanation.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 378.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 371.00 Tm
+(This means the system is not only a weather display app. It is a weather intelligence) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 356.00 Tm
+(system that applies trained models and health-aware reasoning to produce personalized) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 341.00 Tm
+(recommendations.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 326.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 319.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 314.00 Tm
+(26. Important Notes And Limitations) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 294.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 287.00 Tm
+(- The ASHRAE dataset is mainly based on thermal comfort data, often indoor or) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 272.00 Tm
+(controlled-environment focused.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 257.00 Tm
+(- Applying this to outdoor weather is useful for a prototype but should be discussed) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 242.00 Tm
+(as a limitation.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 227.00 Tm
+(- Health recommendations are decision-support only and should not be treated as) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 212.00 Tm
+(medical diagnosis.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 197.00 Tm
+(- The forecast timing system depends on OpenWeatherMap forecast availability.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 182.00 Tm
+(- UV data availability may vary depending on the API endpoint and subscription) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 167.00 Tm
+(support.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 152.00 Tm
+(- The frontend uses React through browser CDN, so internet access is needed for) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 137.00 Tm
+(first page load.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 122.00 Tm
+(- The high-risk class has lower recall than the other risk classes and should be) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 107.00 Tm
+(discussed critically.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 92.00 Tm
+(- The current application does not persist user profiles or history.) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 77.00 Tm
+(- The model evaluation page shows saved training metrics and should not be) Tj
+ET
+endstream
+endobj
+47 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [46 0 R 73 0 R] >>
+endobj
+48 0 obj
+<< /Length 3232 >>
+stream
+BT
+/F1 10.5 Tf
+1 0 0 1 64.00 784.00 Tm
+(interpreted as clinical validation.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 769.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 762.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 757.00 Tm
+(27. Suggested Explanation For Presentation) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 737.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 730.00 Tm
+(This project addresses the limitation that most weather applications show the same) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 715.00 Tm
+(weather values to every user. In this system, the same temperature can produce different) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 700.00 Tm
+(recommendations depending on age, health condition, sensitivity, and selected) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 685.00 Tm
+(activities. The backend combines real-time weather data with trained machine learning) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 670.00 Tm
+(models and rule-based health validation to produce personalized weather intelligence.) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 655.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 648.00 Tm
+(The system demonstrates:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 633.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 626.00 Tm
+(- Data collection through weather APIs) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 611.00 Tm
+(- Machine learning model training) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 596.00 Tm
+(- Model deployment through FastAPI) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 581.00 Tm
+(- User profile personalization) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 566.00 Tm
+(- Health-aware risk analysis) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 551.00 Tm
+(- Forecast-based activity planning) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 536.00 Tm
+(- Browser-based React frontend) Tj
+/F1 10.5 Tf
+1 0 0 1 64.00 521.00 Tm
+(- Model evaluation and transparency dashboard) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 506.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 499.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 494.00 Tm
+(28. Key Files To Give Another Developer Or Chatbot) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 474.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 467.00 Tm
+(If another person or chatbot needs to understand the project, provide these files:) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 452.00 Tm
+() Tj
+/F3 9 Tf
+1 0 0 1 68.00 445.00 Tm
+(PROJECT_WORKFLOW.md) Tj
+/F3 9 Tf
+1 0 0 1 68.00 432.00 Tm
+(api.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 419.00 Tm
+(modules/weather_api.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 406.00 Tm
+(modules/predictions.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 393.00 Tm
+(models/train_models.py) Tj
+/F3 9 Tf
+1 0 0 1 68.00 380.00 Tm
+(models/metrics.json) Tj
+/F3 9 Tf
+1 0 0 1 68.00 367.00 Tm
+(frontend/simple/index.html) Tj
+/F3 9 Tf
+1 0 0 1 68.00 354.00 Tm
+(requirements.txt) Tj
+/F3 9 Tf
+1 0 0 1 68.00 341.00 Tm
+(README.md) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 328.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 320.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 313.00 Tm
+() Tj
+/F2 15 Tf
+1 0 0 1 54.00 308.00 Tm
+(29. Short Summary) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 288.00 Tm
+() Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 281.00 Tm
+(Personalized Weather Intelligence is a FastAPI and React application that uses) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 266.00 Tm
+(OpenWeatherMap data, trained ML models, health-profile rules, and forecast analysis to) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 251.00 Tm
+(produce personalized weather, health risk, activity suitability, and safer activity) Tj
+/F1 10.5 Tf
+1 0 0 1 54.00 236.00 Tm
+(timing recommendations.) Tj
+ET
+endstream
+endobj
+49 0 obj
+<< /Type /Page /Parent 50 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents [48 0 R 74 0 R] >>
+endobj
+50 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R 39 0 R 41 0 R 43 0 R 45 0 R 47 0 R 49 0 R] /Count 23 >>
+endobj
+51 0 obj
+<< /Type /Catalog /Pages 50 0 R >>
+endobj
+52 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 1 of 23) Tj ET
+endstream
+endobj
+53 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 2 of 23) Tj ET
+endstream
+endobj
+54 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 3 of 23) Tj ET
+endstream
+endobj
+55 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 4 of 23) Tj ET
+endstream
+endobj
+56 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 5 of 23) Tj ET
+endstream
+endobj
+57 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 6 of 23) Tj ET
+endstream
+endobj
+58 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 7 of 23) Tj ET
+endstream
+endobj
+59 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 8 of 23) Tj ET
+endstream
+endobj
+60 0 obj
+<< /Length 105 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 9 of 23) Tj ET
+endstream
+endobj
+61 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 10 of 23) Tj ET
+endstream
+endobj
+62 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 11 of 23) Tj ET
+endstream
+endobj
+63 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 12 of 23) Tj ET
+endstream
+endobj
+64 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 13 of 23) Tj ET
+endstream
+endobj
+65 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 14 of 23) Tj ET
+endstream
+endobj
+66 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 15 of 23) Tj ET
+endstream
+endobj
+67 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 16 of 23) Tj ET
+endstream
+endobj
+68 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 17 of 23) Tj ET
+endstream
+endobj
+69 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 18 of 23) Tj ET
+endstream
+endobj
+70 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 19 of 23) Tj ET
+endstream
+endobj
+71 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 20 of 23) Tj ET
+endstream
+endobj
+72 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 21 of 23) Tj ET
+endstream
+endobj
+73 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 22 of 23) Tj ET
+endstream
+endobj
+74 0 obj
+<< /Length 106 >>
+stream
+BT /F1 8 Tf 1 0 0 1 54.00 28 Tm (Personalized Weather Intelligence Project Workflow | Page 23 of 23) Tj ET
+endstream
+endobj
+xref
+0 75
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000228 00000 n 
+0000003934 00000 n 
+0000004090 00000 n 
+0000007773 00000 n 
+0000007929 00000 n 
+0000011290 00000 n 
+0000011446 00000 n 
+0000014871 00000 n 
+0000015029 00000 n 
+0000018279 00000 n 
+0000018437 00000 n 
+0000021902 00000 n 
+0000022060 00000 n 
+0000025622 00000 n 
+0000025780 00000 n 
+0000029074 00000 n 
+0000029232 00000 n 
+0000032664 00000 n 
+0000032822 00000 n 
+0000036370 00000 n 
+0000036528 00000 n 
+0000039879 00000 n 
+0000040037 00000 n 
+0000044152 00000 n 
+0000044310 00000 n 
+0000047828 00000 n 
+0000047986 00000 n 
+0000051583 00000 n 
+0000051741 00000 n 
+0000055632 00000 n 
+0000055790 00000 n 
+0000060012 00000 n 
+0000060170 00000 n 
+0000063837 00000 n 
+0000063995 00000 n 
+0000067827 00000 n 
+0000067985 00000 n 
+0000071861 00000 n 
+0000072019 00000 n 
+0000075938 00000 n 
+0000076096 00000 n 
+0000080030 00000 n 
+0000080188 00000 n 
+0000084445 00000 n 
+0000084603 00000 n 
+0000087888 00000 n 
+0000088046 00000 n 
+0000088257 00000 n 
+0000088308 00000 n 
+0000088465 00000 n 
+0000088622 00000 n 
+0000088779 00000 n 
+0000088936 00000 n 
+0000089093 00000 n 
+0000089250 00000 n 
+0000089407 00000 n 
+0000089564 00000 n 
+0000089721 00000 n 
+0000089879 00000 n 
+0000090037 00000 n 
+0000090195 00000 n 
+0000090353 00000 n 
+0000090511 00000 n 
+0000090669 00000 n 
+0000090827 00000 n 
+0000090985 00000 n 
+0000091143 00000 n 
+0000091301 00000 n 
+0000091459 00000 n 
+0000091617 00000 n 
+0000091775 00000 n 
+trailer
+<< /Size 75 /Root 51 0 R >>
+startxref
+91933
+%%EOF

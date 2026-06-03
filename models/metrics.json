@@ -1,0 +1,169 @@
+{
+  "feels_like": {
+    "MAE": 0.216,
+    "RMSE": 0.367,
+    "algorithm": "Random Forest",
+    "comparison": {
+      "Linear Regression": {
+        "MAE": 0.263,
+        "RMSE": 0.438
+      },
+      "Decision Tree": {
+        "MAE": 0.257,
+        "RMSE": 0.427
+      },
+      "Random Forest": {
+        "MAE": 0.216,
+        "RMSE": 0.367
+      },
+      "Gradient Boosting": {
+        "MAE": 0.234,
+        "RMSE": 0.379
+      },
+      "XGBoost": {
+        "MAE": 0.236,
+        "RMSE": 0.373
+      },
+      "CatBoost": {
+        "MAE": 0.241,
+        "RMSE": 0.375
+      }
+    },
+    "cv_mae_mean": 0.314,
+    "cv_mae_std": 0.029
+  },
+  "activity": {
+    "F1": 0.968,
+    "Accuracy": 0.965,
+    "Precision": 0.962,
+    "Recall": 0.965,
+    "best_algorithm": "Random Forest",
+    "comparison": {
+      "Decision Tree": {
+        "F1": 0.967,
+        "Accuracy": 0.965,
+        "Precision": 0.965,
+        "Recall": 0.965
+      },
+      "Random Forest": {
+        "F1": 0.968,
+        "Accuracy": 0.965,
+        "Precision": 0.962,
+        "Recall": 0.965
+      },
+      "Gradient Boosting": {
+        "F1": 0.966,
+        "Accuracy": 0.964,
+        "Precision": 0.963,
+        "Recall": 0.964
+      },
+      "XGBoost": {
+        "F1": 0.967,
+        "Accuracy": 0.964,
+        "Precision": 0.963,
+        "Recall": 0.964
+      },
+      "LightGBM": {
+        "F1": 0.967,
+        "Accuracy": 0.964,
+        "Precision": 0.964,
+        "Recall": 0.964
+      },
+      "CatBoost": {
+        "F1": 0.966,
+        "Accuracy": 0.964,
+        "Precision": 0.962,
+        "Recall": 0.964
+      }
+    },
+    "cv_f1_mean": 0.95,
+    "cv_f1_std": 0.009
+  },
+  "health_risk": {
+    "Accuracy": 0.992,
+    "F1": 0.992,
+    "Precision": 0.992,
+    "Recall": 0.992,
+    "best_algorithm": "Neural Network (MLP)",
+    "comparison": {
+      "Logistic Regression": {
+        "F1": 0.978,
+        "Accuracy": 0.978,
+        "Precision": 0.978,
+        "Recall": 0.978
+      },
+      "Decision Tree": {
+        "F1": 0.994,
+        "Accuracy": 0.994,
+        "Precision": 0.994,
+        "Recall": 0.994
+      },
+      "Random Forest": {
+        "F1": 0.995,
+        "Accuracy": 0.995,
+        "Precision": 0.995,
+        "Recall": 0.995
+      },
+      "Gradient Boosting": {
+        "F1": 0.993,
+        "Accuracy": 0.993,
+        "Precision": 0.993,
+        "Recall": 0.993
+      },
+      "XGBoost": {
+        "F1": 0.994,
+        "Accuracy": 0.994,
+        "Precision": 0.994,
+        "Recall": 0.994
+      },
+      "LightGBM": {
+        "F1": 0.994,
+        "Accuracy": 0.993,
+        "Precision": 0.993,
+        "Recall": 0.993
+      },
+      "CatBoost": {
+        "F1": 0.994,
+        "Accuracy": 0.994,
+        "Precision": 0.994,
+        "Recall": 0.994
+      },
+      "Neural Network (MLP)": {
+        "F1": 0.992,
+        "Accuracy": 0.992,
+        "Precision": 0.992,
+        "Recall": 0.992
+      }
+    },
+    "precision_per_class": {
+      "Low": 0.994,
+      "Medium": 0.987,
+      "High": 0.958
+    },
+    "recall_per_class": {
+      "Low": 1.0,
+      "Medium": 0.979,
+      "High": 0.719
+    }
+  },
+  "feature_importance": {
+    "feature_temp": 0.9822,
+    "feature_humidity": 0.0057,
+    "feature_wind": 0.0047,
+    "feature_aqi": 0.0018,
+    "feature_age": 0.0025,
+    "feature_health_score": 0.0018,
+    "feature_heat_sens": 0.0008,
+    "feature_cold_sens": 0.0005
+  },
+  "feature_names": {
+    "feature_temp": "Temperature",
+    "feature_humidity": "Humidity",
+    "feature_wind": "Wind Speed",
+    "feature_aqi": "Air Quality Index",
+    "feature_age": "Age",
+    "feature_health_score": "Health Score",
+    "feature_heat_sens": "Heat Sensitivity",
+    "feature_cold_sens": "Cold Sensitivity"
+  }
+}

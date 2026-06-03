@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+models/*.pkl
+data/*.csv
+data/*.gz
+.DS_Store
+weather_app.db
